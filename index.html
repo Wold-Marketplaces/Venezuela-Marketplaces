@@ -156,6 +156,77 @@
       z-index: 1;
       color: #fff;
     }
+    /* Additional styling for Latinoamérica section */
+    .world-marketplace {
+      max-width: 1200px;
+      margin: 2rem auto;
+      text-align: center;
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 2rem;
+      border-radius: 8px;
+    }
+
+    .world-title {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+    }
+
+    .world-marketplace p {
+      font-size: 1rem;
+      margin-bottom: 2rem;
+      opacity: 0.9;
+    }
+
+    .continent-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      gap: 1.5rem;
+      justify-items: center;
+      margin-bottom: 2rem;
+    }
+
+    .continent-card {
+      background-color: #ffffff;
+      color: #333333;
+      padding: 1rem;
+      border-radius: 8px;
+      width: 100%;
+      max-width: 220px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+      transition: transform 0.2s ease-in-out;
+    }
+
+    .continent-card h3 {
+      margin-bottom: 0.5rem;
+      font-size: 1.1rem;
+      color: #d2271a;
+      text-transform: uppercase;
+    }
+
+    .continent-card p {
+      font-size: 0.9rem;
+      margin-bottom: 0;
+    }
+
+    .continent-card:hover {
+      transform: translateY(-3px);
+    }
+
+    .special-button {
+      display: inline-block;
+      padding: 0.8rem 1.5rem;
+      background-color: #f4a261;
+      color: #264653;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+      transition: background-color 0.2s ease-in-out;
+    }
+
+    .special-button:hover {
+      background-color: #e08e3c;
+    }
+    
   </style>
 </head>
 
@@ -262,6 +333,50 @@
       </a>
     </div>
   </section>
+
+  <!-- Sección: Latinoamérica Marketplaces adaptado para Venezuela -->
+  <section class="world-marketplace">
+    <h2 class="world-title">Latinoamérica Marketplaces</h2>
+    <p>Conecta con otros mercados de América Latina</p>
+    
+    <div class="continent-list">
+      <div class="continent-card">
+        <h3>Brasil</h3>
+        <p>Mayor mercado de Sudamérica</p>
+      </div>
+      <div class="continent-card">
+        <h3>Chile</h3>
+        <p>Comercio Andino</p>
+      </div>
+      <div class="continent-card">
+        <h3>Uruguay</h3>
+        <p>Mercado Rioplatense</p>
+      </div>
+      <div class="continent-card">
+        <h3>Paraguay</h3>
+        <p>Corazón de Sudamérica</p>
+      </div>
+      <div class="continent-card">
+        <h3>Bolivia</h3>
+        <p>Tradición Andina</p>
+      </div>
+      <div class="continent-card">
+        <h3>Argentina</h3>
+        <p>Extensa presencia en el Cono Sur</p>
+      </div>
+    </div>
+
+    <a href="https://tilisaraomarket.github.io/Latinoamerica-Marketplaces/" class="special-button">Explorar Mercados Latinos</a>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Venezuela Marketplaces Network. Conectando comercios de todos los estados.</p>
+    <p>Presente en 23 estados | 100,000+ vendedores | 10M+ productos</p>
+  </footer>
+</body>
+
+</html>
+  
 
   <footer>
     &copy; 2025 Venezuela Marketplaces.
