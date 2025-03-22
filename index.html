@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Venezuela Marketplaces</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #FCD116 0%, #00247D 50%, #D2271A 100%);
+      color: #ffffff;
+      min-height: 100vh;
+      width: 100%;
+      padding: 1rem;
+    }
+
+    header {
+      width: 100%;
+      padding: 1rem;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    header h1 {
+      font-size: clamp(1.5rem, 5vw, 2rem);
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: clamp(0.9rem, 3vw, 1rem);
+      opacity: 0.8;
+      padding: 0 1rem;
+    }
+
+    .market-container {
+      width: 100%;
+      max-width: 1000px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1rem;
+      padding: 0.5rem;
+    }
+
+    .market-card {
+      background-color: #ffffff;
+      color: #333333;
+      border-radius: 8px;
+      width: 100%;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      transition: transform 0.2s ease-in-out;
+      text-decoration: none;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .market-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card-header {
+      background-color: #f4a261;
+      padding: 1rem;
+    }
+
+    .card-header h2 {
+      font-size: clamp(1.1rem, 4vw, 1.25rem);
+      margin-bottom: 0.2rem;
+    }
+
+    .card-content {
+      padding: 1rem;
+      flex-grow: 1;
+    }
+
+    .card-content p {
+      margin-bottom: 1rem;
+      line-height: 1.4;
+      font-size: clamp(0.9rem, 3vw, 1rem);
+    }
+
+    .card-link {
+      font-weight: bold;
+      color: #264653;
+      text-decoration: none;
+      font-size: clamp(0.9rem, 3vw, 1rem);
+    }
+
+    .card-link:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      width: 100%;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+      font-size: clamp(0.8rem, 2.5vw, 0.9rem);
+      opacity: 0.8;
+    }
+
+    .venezuela-section {
+      max-width: 1200px;
+      margin: 3rem auto;
+      padding: 3rem 2rem;
+      border-radius: 1rem;
+      background: linear-gradient(120deg, #FCD116 0%, #00247D 50%, #D2271A 100%);
+      box-shadow: var(--shadow-lg, 0 4px 12px rgba(0, 0, 0, 0.3));
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      color: #ffffff;
+    }
+
+    .venezuela-section::before,
+    .venezuela-section::after {
+      content: "";
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      background-color: rgba(255, 255, 255, 0.3);
+      z-index: 0;
+      filter: blur(30px);
+    }
+
+    .venezuela-section::before {
+      top: -50px;
+      left: -50px;
+    }
+
+    .venezuela-section::after {
+      bottom: -50px;
+      right: -50px;
+    }
+
+    .venezuela-section h2 {
+      margin-bottom: 1rem;
+      font-size: 2rem;
+      position: relative;
+      z-index: 1;
+    }
+
+    .venezuela-section p {
+      margin-bottom: 2rem;
+      font-size: 1.2rem;
+      position: relative;
+      z-index: 1;
+      color: #fff;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Venezuela Marketplaces</h1>
+    <p>Descubre las ciudades más emblemáticas de Venezuela, dando a conocer sus productos y servicios.</p>
+  </header>
+
+  <!-- Sección especial: Venezuela Marketplaces -->
+  <section class="venezuela-section">
+    <h2>Ciudades de Venezuela</h2>
+    <p>Explora los mercados en línea de las principales ciudades venezolanas.</p>
+    <div class="market-container">
+      <!-- Tarjeta Caracas Market -->
+      <a href="https://venezuelamarket.github.io/Caracas-Marketplace/" class="market-card" target="_blank"
+        rel="noopener noreferrer">
+        <div class="card-header">
+          <h2>Caracas</h2>
+          <p>Capital de Venezuela, centro político, económico y cultural del país.</p>
+        </div>
+        <div class="card-content">
+          <p>
+            Conoce el vibrante mercado de Caracas, corazón cultural y económico de Venezuela.
+            Explora productos tradicionales, gastronomía local y una diversidad de servicios
+            que reflejan la energía inigualable de la capital venezolana. Desde artesanías
+            hasta tecnología de punta, Caracas ofrece una experiencia de compra única.
+          </p>
+          <span class="card-link">Ir a Caracas Market &rarr;</span>
+        </div>
+      </a>
+
+      <!-- Tarjeta Maracaibo Market -->
+      <a href="https://venezuelamarket.github.io/Maracaibo-Marketplace/" class="market-card" target="_blank"
+        rel="noopener noreferrer">
+        <div class="card-header">
+          <h2>Maracaibo</h2>
+          <p>La "Tierra del Sol Amada", conocida por su gente cálida y el Puente General Rafael Urdaneta.</p>
+        </div>
+        <div class="card-content">
+          <p>
+            Sumérgete en la calidez y el sabor de Maracaibo, donde encontrarás una gran variedad
+            de productos y servicios locales. Disfruta de la tradición zuliana reflejada en cada
+            rincón de este marketplace. Desde la famosa gaita zuliana hasta la deliciosa comida
+            típica, Maracaibo es un lugar donde la cultura y el comercio se encuentran.
+          </p>
+          <span class="card-link">Ir a Maracaibo Market &rarr;</span>
+        </div>
+      </a>
+
+      <!-- Tarjeta Valencia Market -->
+      <a href="https://venezuelamarket.github.io/Valencia-Marketplace/" class="market-card" target="_blank"
+        rel="noopener noreferrer">
+        <div class="card-header">
+          <h2>Valencia</h2>
+          <p>Ciudad industrial de Venezuela, importante centro económico y comercial.</p>
+        </div>
+        <div class="card-content">
+          <p>
+            Descubre la mezcla perfecta de modernidad y tradición en Valencia, donde los
+            emprendedores locales te ofrecen productos de calidad y servicios innovadores,
+            reflejando el crecimiento dinámico de esta importante ciudad. Desde productos
+            industriales hasta artesanías locales, Valencia es un mercado en constante evolución.
+          </p>
+          <span class="card-link">Ir a Valencia Market &rarr;</span>
+        </div>
+      </a>
+
+      <!-- Tarjeta Barquisimeto Market -->
+      <a href="https://venezuelamarket.github.io/Barquisimeto-Marketplace/" class="market-card" target="_blank"
+        rel="noopener noreferrer">
+        <div class="card-header">
+          <h2>Barquisimeto</h2>
+          <p>La "Ciudad Musical" de Venezuela, famosa por sus crepúsculos y su rica tradición musical.</p>
+        </div>
+        <div class="card-content">
+          <p>
+            Bienvenido al mercado de la “Ciudad Musical”, Barquisimeto. Un espacio donde la
+            cultura, la música y la gastronomía se fusionan para brindarte una experiencia
+            única. Descubre productos y servicios con el sello de la calidez larense, desde
+            instrumentos musicales hasta delicias culinarias locales.
+          </p>
+          <span class="card-link">Ir a Barquisimeto Market &rarr;</span>
+        </div>
+      </a>
+
+      <!-- Tarjeta Maracay Market -->
+      <a href="https://venezuelamarket.github.io/Maracay-Marketplace/" class="market-card" target="_blank"
+        rel="noopener noreferrer">
+        <div class="card-header">
+          <h2>Maracay</h2>
+          <p>Conocida como la "Ciudad Jardín" de Venezuela, famosa por sus paisajes y su clima agradable.</p>
+        </div>
+        <div class="card-content">
+          <p>
+            Adéntrate en la “Ciudad Jardín”, Maracay. Descubre un mercado lleno
+            de flora, gastronomía típica y servicios variados. Podrás conectarte
+            con la esencia de este lugar acogedor que une naturaleza y modernidad.
+            Desde productos agrícolas frescos hasta innovaciones tecnológicas, Maracay
+            ofrece una experiencia de compra diversa y enriquecedora.
+          </p>
+          <span class="card-link">Ir a Maracay Market &rarr;</span>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Venezuela Marketplaces.
+  </footer>
+</body>
+
+</html>
